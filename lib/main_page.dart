@@ -53,17 +53,17 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Pencarian'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {
-              showSearch(context: context, delegate: CustomSearch());
-            },
-          )
-        ],
-      ),
+      // appBar: AppBar(
+      //   title: Text('Pencarian'),
+      //   actions: [
+      //     IconButton(
+      //       icon: const Icon(Icons.search),
+      //       onPressed: () {
+      //         showSearch(context: context, delegate: CustomSearch());
+      //       },
+      //     )
+      //   ],
+      // ),
       backgroundColor: Colors.white,
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[

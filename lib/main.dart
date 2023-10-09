@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t1_2021110083/Pages/ButtonPage.dart';
 import 'package:t1_2021110083/Pages/HomePage.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class TabBarDemo extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       routes: {
-        "/": (context) => HomePage(),
+        "/": (context) => ButtonPage(),
       },
     );
   }
