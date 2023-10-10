@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t1_2021110083/Widgets/AkunWidget.dart';
 
 class AkunPage extends StatelessWidget {
   const AkunPage({super.key});
@@ -9,54 +10,22 @@ class AkunPage extends StatelessWidget {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
               vertical: 10,
               horizontal: 15,
             ),
             child: Container(
-              width: 50,
-              height: 50,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
+              padding: EdgeInsets.only(top: 20, left: 10),
+              child: Text(
+                "Best of the month",
+                style: TextStyle(
+                  // fontStyle: FontWeight.bold,
+                  fontSize: 30,
                 ),
               ),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
-            child: Text(
-              "Best of the month",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 30,
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
-            child: Text(
-              "The Color Tone",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 30,
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
-            child: Text(
-              "Category",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 30,
-              ),
-            ),
-          ),
+          AkunWidget()
         ],
       ),
     );

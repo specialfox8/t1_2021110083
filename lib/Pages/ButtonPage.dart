@@ -32,7 +32,7 @@ class _ButtonPageState extends State<ButtonPage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.window), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.save_alt), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.person_outline_rounded), label: ''),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTap,

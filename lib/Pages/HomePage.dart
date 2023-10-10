@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
               height: 50,
               decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(5),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.5),
@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                         color: Colors.grey,
                       ),
                       SizedBox(
-                        height: 50,
+                        height: 150,
                         width: 300,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
