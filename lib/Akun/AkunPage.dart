@@ -11,35 +11,72 @@ class AkunPage extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
-          const Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
-            child: Text(
-              "Ryan",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 30,
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
-            child: Text(
-              "ryanazhari@gmail.com",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 15,
-              ),
-            ),
-          ),
-          YouSave(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             child: Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Colors.white,
+                      spreadRadius: 3,
+                      blurRadius: 10,
+                      offset: Offset(0, 3),
+                    )
+                  ]),
+              child: const Column(children: [
+                Padding(
+                  padding: EdgeInsets.only(right: 0),
+                  child: CircleAvatar(
+                    radius: 50.0,
+                    backgroundImage: AssetImage('images/1.jpg'),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 0),
+                  child: Text(
+                    "Ryan",
+                    style: TextStyle(
+                      // fontStyle: FontWeight.bold,
+                      fontSize: 30,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 0),
+                  child: Text(
+                    "ryanazhari@gmail.com",
+                    style: TextStyle(
+                      // fontStyle: FontWeight.bold,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ]),
+            ),
+          ),
+
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            child: Text(
+              "You Saved",
+              style: TextStyle(
+                // fontStyle: FontWeight.bold,
+                fontSize: 25,
+              ),
+            ),
+          ),
+          const YouSave(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            child: Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.grey,
                       spreadRadius: 3,
@@ -47,7 +84,7 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: Column(children: [
+              child: const Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
@@ -59,13 +96,13 @@ class AkunPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             child: Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.grey,
                       spreadRadius: 3,
@@ -73,7 +110,7 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: Column(children: [
+              child: const Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
@@ -85,13 +122,13 @@ class AkunPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             child: Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.grey,
                       spreadRadius: 3,
@@ -99,7 +136,7 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: Column(children: [
+              child: const Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
@@ -111,13 +148,13 @@ class AkunPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             child: Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.grey,
                       spreadRadius: 3,
@@ -125,7 +162,7 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: Column(children: [
+              child: const Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
