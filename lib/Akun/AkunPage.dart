@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:t1_2021110083/Widgets/AkunWidget.dart';
-import 'package:t1_2021110083/Widgets/listprofil.dart';
-
 import '../Widgets/ProfilAkun.dart';
 import '../Widgets/YouSave.dart';
 
