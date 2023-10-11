@@ -96,7 +96,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          Kategori(),
+          const Kategori(),
         ],
       ),
     );
