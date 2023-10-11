@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:t1_2021110083/Widgets/Category.dart';
 import 'package:t1_2021110083/Widgets/ColorTone.dart';
-import '../Widgets/AppBarWidget.dart';
+import 'package:t1_2021110083/Widgets/SearchBar.dart';
 import '../Widgets/BestOf.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,58 +14,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: [
-          AppBarWidget(),
+        children: const [
           Padding(
-            padding: const EdgeInsets.symmetric(
-              vertical: 10,
-              horizontal: 15,
-            ),
-            child: Container(
-              width: double.infinity,
-              height: 50,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 2,
-                      blurRadius: 10,
-                      offset: const Offset(0, 3),
-                    ),
-                  ]),
-              child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                  ),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.search,
-                        color: Colors.grey,
-                      ),
-                      SizedBox(
-                        height: 150,
-                        width: 300,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 15,
-                          ),
-                          child: TextFormField(
-                            decoration: const InputDecoration(
-                              hintText: "Find Wallpaper...",
-                              border: InputBorder.none,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  )),
+            padding: EdgeInsets.only(
+              top: 20,
+              left: 10,
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
+          Cari(),
+          Padding(
+            padding: EdgeInsets.only(top: 15, left: 10),
             child: Text(
               "Best of the month",
               style: TextStyle(
@@ -74,8 +32,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          const BestOf(),
-          const Padding(
+          BestOf(),
+          Padding(
             padding: EdgeInsets.only(top: 20, left: 10),
             child: Text(
               "The Color Tone",
@@ -85,8 +43,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          const ColorTone(),
-          const Padding(
+          ColorTone(),
+          Padding(
             padding: EdgeInsets.only(top: 20, left: 10),
             child: Text(
               "Category",
@@ -96,7 +54,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          const Kategori(),
+          Kategori(),
         ],
       ),
     );
