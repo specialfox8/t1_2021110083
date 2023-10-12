@@ -28,7 +28,7 @@ class AkunPage extends StatelessWidget {
                     )
                   ]),
               child: Column(children: [
-                Padding(
+                const Padding(
                   padding: EdgeInsets.only(right: 0),
                   child: CircleAvatar(
                     radius: 50.0,
@@ -36,7 +36,7 @@ class AkunPage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 0),
+                  padding: const EdgeInsets.only(left: 0),
                   child: Text(
                     "Ryan",
                     style: GoogleFonts.robotoCondensed(
@@ -48,7 +48,7 @@ class AkunPage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 0),
+                  padding: const EdgeInsets.only(left: 0),
                   child: Text(
                     "ryanazhari@gmail.com",
                     style: GoogleFonts.robotoCondensed(
@@ -64,7 +64,7 @@ class AkunPage extends StatelessWidget {
           ),
 
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             child: Text(
               "You Saved",
               style: GoogleFonts.robotoCondensed(
@@ -93,7 +93,7 @@ class AkunPage extends StatelessWidget {
                   ]),
               child: Column(children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -129,10 +129,10 @@ class AkunPage extends StatelessWidget {
                   ]),
               child: Column(children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [ 
+                    children: [
                       Text(
                         "About Us",
                         style: GoogleFonts.robotoCondensed(
@@ -141,7 +141,8 @@ class AkunPage extends StatelessWidget {
                               fontWeight: FontWeight.w100,
                               fontStyle: FontStyle.normal),
                         ),
-                      ),],
+                      ),
+                    ],
                   ),
                 ),
               ]),
@@ -164,10 +165,11 @@ class AkunPage extends StatelessWidget {
                   ]),
               child: Column(children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [ Text(
+                    children: [
+                      Text(
                         "Help Center",
                         style: GoogleFonts.robotoCondensed(
                           textStyle: const TextStyle(
@@ -175,7 +177,8 @@ class AkunPage extends StatelessWidget {
                               fontWeight: FontWeight.w100,
                               fontStyle: FontStyle.normal),
                         ),
-                      ),],
+                      ),
+                    ],
                   ),
                 ),
               ]),
@@ -198,19 +201,20 @@ class AkunPage extends StatelessWidget {
                   ]),
               child: Column(children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [ Text(
+                    children: [
+                      Text(
                         "Feedback",
                         style: GoogleFonts.robotoCondensed(
                           textStyle: const TextStyle(
-                            
                               fontSize: 15,
                               fontWeight: FontWeight.w100,
                               fontStyle: FontStyle.normal),
                         ),
-                      ),],
+                      ),
+                    ],
                   ),
                 ),
               ]),
