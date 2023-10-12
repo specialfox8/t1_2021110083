@@ -4,6 +4,7 @@ import 'package:t1_2021110083/Widgets/Category.dart';
 import 'package:t1_2021110083/Widgets/ColorTone.dart';
 import 'package:t1_2021110083/Widgets/SearchBar.dart';
 import '../Widgets/BestOf.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -14,47 +15,53 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: const [
-          Padding(
+        children: [
+          const Padding(
             padding: EdgeInsets.only(
               top: 20,
               left: 10,
             ),
           ),
-          Cari(),
+          const Cari(),
           Padding(
-            padding: EdgeInsets.only(top: 15, left: 10),
+            padding: const EdgeInsets.only(top: 15, left: 10),
             child: Text(
               "Best of the month",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 30,
+              style: GoogleFonts.robotoCondensed(
+                textStyle: const TextStyle(
+                    fontSize: 35,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.normal),
               ),
             ),
           ),
-          BestOf(),
+          const BestOf(),
           Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
+            padding: const EdgeInsets.only(top: 20, left: 10),
             child: Text(
               "The Color Tone",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 30,
+              style: GoogleFonts.robotoCondensed(
+                textStyle: const TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.normal),
               ),
             ),
           ),
-          ColorTone(),
+          const ColorTone(),
           Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
+            padding: const EdgeInsets.only(top: 20, left: 10),
             child: Text(
               "Category",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 30,
+              style: GoogleFonts.robotoCondensed(
+                textStyle: const TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.normal),
               ),
             ),
           ),
-          Kategori(),
+          const Kategori(),
         ],
       ),
     );

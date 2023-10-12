@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:t1_2021110083/Widgets/AkunWidget.dart';
 import '../Widgets/ProfilAkun.dart';
 import '../Widgets/YouSave.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AkunPage extends StatelessWidget {
   const AkunPage({super.key});
@@ -26,7 +27,7 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: const Column(children: [
+              child: Column(children: [
                 Padding(
                   padding: EdgeInsets.only(right: 0),
                   child: CircleAvatar(
@@ -38,9 +39,11 @@ class AkunPage extends StatelessWidget {
                   padding: EdgeInsets.only(left: 0),
                   child: Text(
                     "Ryan",
-                    style: TextStyle(
-                      // fontStyle: FontWeight.bold,
-                      fontSize: 30,
+                    style: GoogleFonts.robotoCondensed(
+                      textStyle: const TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w700,
+                          fontStyle: FontStyle.normal),
                     ),
                   ),
                 ),
@@ -48,9 +51,11 @@ class AkunPage extends StatelessWidget {
                   padding: EdgeInsets.only(left: 0),
                   child: Text(
                     "ryanazhari@gmail.com",
-                    style: TextStyle(
-                      // fontStyle: FontWeight.bold,
-                      fontSize: 15,
+                    style: GoogleFonts.robotoCondensed(
+                      textStyle: const TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w100,
+                          fontStyle: FontStyle.normal),
                     ),
                   ),
                 ),
@@ -58,13 +63,15 @@ class AkunPage extends StatelessWidget {
             ),
           ),
 
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
             child: Text(
               "You Saved",
-              style: TextStyle(
-                // fontStyle: FontWeight.bold,
-                fontSize: 25,
+              style: GoogleFonts.robotoCondensed(
+                textStyle: const TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w100,
+                    fontStyle: FontStyle.normal),
               ),
             ),
           ),
@@ -84,12 +91,22 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: const Column(children: [
+              child: Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text('Live Wallpaper')],
+                    children: [
+                      Text(
+                        "Live Wallpaper",
+                        style: GoogleFonts.robotoCondensed(
+                          textStyle: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w100,
+                              fontStyle: FontStyle.normal),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ]),
@@ -110,12 +127,21 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: const Column(children: [
+              child: Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text('About Us')],
+                    children: [ 
+                      Text(
+                        "About Us",
+                        style: GoogleFonts.robotoCondensed(
+                          textStyle: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w100,
+                              fontStyle: FontStyle.normal),
+                        ),
+                      ),],
                   ),
                 ),
               ]),
@@ -136,12 +162,20 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: const Column(children: [
+              child: Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text('Help Center')],
+                    children: [ Text(
+                        "Help Center",
+                        style: GoogleFonts.robotoCondensed(
+                          textStyle: const TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w100,
+                              fontStyle: FontStyle.normal),
+                        ),
+                      ),],
                   ),
                 ),
               ]),
@@ -162,12 +196,21 @@ class AkunPage extends StatelessWidget {
                       offset: Offset(0, 3),
                     )
                   ]),
-              child: const Column(children: [
+              child: Column(children: [
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text('FeedBack')],
+                    children: [ Text(
+                        "Feedback",
+                        style: GoogleFonts.robotoCondensed(
+                          textStyle: const TextStyle(
+                            
+                              fontSize: 15,
+                              fontWeight: FontWeight.w100,
+                              fontStyle: FontStyle.normal),
+                        ),
+                      ),],
                   ),
                 ),
               ]),

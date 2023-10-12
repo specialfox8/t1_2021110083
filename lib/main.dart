@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:t1_2021110083/Pages/ButtonPage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const TabBarDemo());
@@ -15,7 +16,6 @@ class TabBarDemo extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
-        fontFamily: 'Roboto',
       ),
       routes: {
         "/": (context) => ButtonPage(),
